@@ -1,57 +1,14 @@
 #ifndef SORT_H
 #define SORT_H
 
-/* print_array */
-
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-/**
- * print_array - Prints an array of integers
- *
- * @array: The array to be printed
- * @size: Number of elements in @array
- */
-void print_array(const int *array, size_t size)
-{
-    size_t i;
-
-    i = 0;
-    while (array && i < size)
-    {
-        if (i > 0)
-            printf(", ");
-        printf("%d", array[i]);
-        ++i;
-    }
-    printf("\n");
-}
+/* print_array */
+void print_array(const int *array, size_t siz);
 
 /* print_list */
-
-#include <stdio.h>
-#include "sort.h"
-
-/**
- * print_list - Prints a list of integers
- *
- * @list: The list to be printed
- */
-void print_list(const listint_t *list)
-{
-    int i;
-
-    i = 0;
-    while (list)
-    {
-        if (i > 0)
-            printf(", ");
-        printf("%d", list->n);
-        ++i;
-        list = list->next;
-    }
-    printf("\n");
-}
+void print_list(const listint_t *list);
 
 /* Doubly linked list */
 
