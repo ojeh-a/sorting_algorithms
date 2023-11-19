@@ -39,5 +39,6 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
 
 /* ALGORITHMS */
 void bubble_sort(int *array, size_t size); /* bubble sort */
+void insertion_sort_list(listint_t **list); /* insertion sort*/
 
 #endif
