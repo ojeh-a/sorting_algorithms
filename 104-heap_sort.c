@@ -63,7 +63,7 @@ void heap_sort(int *array, size_t size)
 		max_heap(array, size, size, i);
 	for (i = size - 1; i > 0; i--)
 	{
-		swap(array, array + 1);
+		swap(array, array + i);
 		print_array(array, size);
 		max_heap(array, size, i, 0);
 	}
